@@ -1,0 +1,13 @@
+api_platform:
+    title: Hello API Platform
+    version: 1.0.0
+    formats:
+        json: ['application/json'] # 1er de la liste = Format par défaut
+        jsonld: ['application/ld+json'] # Autre format disponible
+        html: ['text/html'] # Autre format disponible
+        xml: ['application/xml', 'text/xml']
+        csv: ['text/csv']
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
